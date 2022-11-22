@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  app:
+    build: ./app/
+    volumes:
+      - ./app/:/usr/src/app
+    stdin_open: true
+    ports:
+      - "80:8080"
